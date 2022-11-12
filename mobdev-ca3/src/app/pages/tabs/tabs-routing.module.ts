@@ -42,6 +42,15 @@ const routes: Routes = [
             loadChildren: () => import('../death-count/death-count.module').then( m => m.DeathCountPageModule)
           }
         ]
+      },
+      {
+        path: 'quotes',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../quotes/quotes.module').then( m => m.QuotesPageModule)
+          }
+        ]
       }
     ]
   },
