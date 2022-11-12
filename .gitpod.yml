@@ -1,5 +1,5 @@
 tasks:
   - name: Install Ionic & Anguar CLI
-    command: npm i -D -E @angular/cli && npx --yes ionic serve
+    command: npm i -g @ionic/cli && npm i -D -E @angular/cli && cd mobdev-ca3 && ionic serve
 
 
