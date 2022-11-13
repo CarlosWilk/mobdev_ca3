@@ -32,7 +32,7 @@ export class ApiService {
     return this.http.get(`https://www.breakingbadapi.com/api/episodes/${id}`);
   }
   getDeaths(){
-    return this.http.get('https://www.breakingbadapi.com/api/deaths-count');
+    return this.http.get('https://www.breakingbadapi.com/api/death-count');
   }
   getDeath(id){
     return this.http.get(`https://www.breakingbadapi.com/api/deaths-count/${id}`);
