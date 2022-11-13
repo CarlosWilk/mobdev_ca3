@@ -4,6 +4,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-item button detail lines="inset" *ngFor="let quote of quotes | async" (click)="openDetails(quotes)">
-  {{ quote?.quote }}
-  </ion-item>
+<ion-content>
+  <ion-list>
+    <ion-item button detail lines="inset" *ngFor="let quote of quotes | async">
+      "{{ quote.quote }}" Author: {{quote.author}} - Series: [{{quote.series}}]
+    </ion-item>
+  </ion-list>
+</ion-content>
