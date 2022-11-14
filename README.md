@@ -37,6 +37,8 @@ Material provided by Mikhail in class
 
 Breaking Bad api:https://breakingbadapi.com
 
+Icons used: https://ionic.io/ionicons
+
 Breaking Bad color scheme: https://www.schemecolor.com/breaking-bad-color-palette.php
 
 How to create .gitpod.yml
