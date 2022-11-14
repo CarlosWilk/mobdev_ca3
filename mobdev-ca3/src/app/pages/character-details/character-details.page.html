@@ -8,23 +8,22 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngIf="character" class="movie-card">
-    <!-- <ion-card-header>Characters {{character.char_id}}</ion-card-header> -->
-    <ion-item>
-      <ion-icon name="character" slot="start"></ion-icon>
-      Name: {{ character.name }}
-    </ion-item>
+  <ion-card *ngIf="character" class="character-card">
     <ion-item lines="none">
       <ion-icon name="document-lock-outline" slot="start"></ion-icon>
-      Nickname {{ character.nickname }}
+      Nickname: {{ character.nickname }}
     </ion-item>
-    <ion-item class="movie-info" lines="none"> <!--need to change style-->
+    <ion-item lines="none">
       <ion-icon name="calendar" slot="start"></ion-icon>
       Birthday: {{ character.birthday }}
     </ion-item>
     <ion-item>
       <ion-icon name="id-card-outline" slot="start"></ion-icon>
       Occupation: {{ character.occupation }}
+    </ion-item>
+    <ion-item class="character-info">
+      <ion-icon name="alert-circle-outline" slot="start"></ion-icon>
+      Status: {{ character.status }}
     </ion-item>
 
   </ion-card>
