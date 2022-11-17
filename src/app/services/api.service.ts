@@ -9,14 +9,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getPlanets(){
-    return this.http.get('https://swapi.dev/api/planets');
-  }
-
-  getPlanet(id){
-    return this.http.get(`https://swapi.dev/api/planets/${id}`);
-  }
-
   getCharacters(){
     return this.http.get('https://www.breakingbadapi.com/api/characters');
   }
@@ -34,6 +26,7 @@ export class ApiService {
   getDeaths(){
     return this.http.get('https://www.breakingbadapi.com/api/death-count');
   }
+  
   getDeath(id){
     return this.http.get(`https://www.breakingbadapi.com/api/deaths-count/${id}`);
   }
