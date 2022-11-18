@@ -17,11 +17,11 @@ Ionic application consuming Breaking Bad API and display the data in four main c
 
 4. Quotes:
 
-Famous quotes from the characters
+Famous quotes from the characters from the series.
 
 6. Death Count:
 
-A simple death total count.
+Who was murdered by who and what was the cause.
 
 
 To run this project, simple add
