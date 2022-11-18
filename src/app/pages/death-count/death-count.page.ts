@@ -18,9 +18,4 @@ export class DeathCountPage implements OnInit {
     this.deaths = this.api.getDeaths();
 }
 
-// openDetails(death){
-//   let deathId = death.death_id;
-//   this.router.navigateByUrl(`/tabs/death-count/${deathId}`);
-// }
-
 }

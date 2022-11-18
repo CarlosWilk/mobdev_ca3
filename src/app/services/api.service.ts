@@ -23,16 +23,13 @@ export class ApiService {
   getEpisode(id){
     return this.http.get(`https://www.breakingbadapi.com/api/episodes/${id}`);
   }
-  getDeaths(){
-    return this.http.get('https://www.breakingbadapi.com/api/death-count');
-  }
   
-  getDeath(id){
-    return this.http.get(`https://www.breakingbadapi.com/api/deaths-count/${id}`);
-  }
-
   getQuotes(){
     return this.http.get('https://www.breakingbadapi.com/api/quotes');
+  }
+
+  getDeaths(){
+    return this.http.get('https://www.breakingbadapi.com/api/death');
   }
 
 }

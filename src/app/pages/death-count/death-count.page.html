@@ -7,7 +7,7 @@
 <ion-content>
   <ion-list>
     <ion-item button detail lines="inset" *ngFor="let death of deaths | async">
-    Death count: {{ death.deathCount }} 
+    Character: {{ death.death }} was killed by {{death.responsible}}. [Cause: {{death.cause}}]
     </ion-item>
   </ion-list>
 </ion-content>
